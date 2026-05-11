@@ -9,7 +9,6 @@ const Header = () => {
   return (
     <nav className="sticky top-0 z-50 w-full bg-white shadow-md">
       <div className="mx-auto flex max-w-7xl items-center justify-end sm:justify-center px-4 py-4">
-        {/* Desktop Menu */}
         <div className="hidden items-center gap-8 lg:flex">
           {menuItems.map((item) => (
             <a
@@ -21,7 +20,6 @@ const Header = () => {
             </a>
           ))}
 
-          {/* Search */}
           <div className="relative w-full max-w-xs">
             <input
               type="text"
@@ -35,7 +33,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-gray-700 lg:hidden"
@@ -44,7 +41,6 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`overflow-hidden transition-all duration-300 lg:hidden ${
           isOpen ? "max-h-[500px]" : "max-h-0"
@@ -61,7 +57,6 @@ const Header = () => {
             </a>
           ))}
 
-          {/* Mobile Search */}
           <div className="relative w-full">
             <input
               type="text"
