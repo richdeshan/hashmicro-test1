@@ -1,4 +1,3 @@
-import React from "react";
 import SocialConnect from "./social-connect";
 
 const Banner = () => {
